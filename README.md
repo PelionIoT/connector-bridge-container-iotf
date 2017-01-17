@@ -2,7 +2,7 @@ mbed Device Connector integration bridge image importer for IBM IoTF
 
 Original Date: January 22, 2016
 
-    12/2/2016: Updated with latest bridge.
+1/17/2017: Updated with the latest bridge. Happy New Year!
 
 Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
