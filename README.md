@@ -1,38 +1,26 @@
 mbed Device Connector integration bridge image importer for IBM IoTF
 
-Original Date: January 22, 2016
+6/20/2017: Cleanups, updates to properties editor and overall structure
 
-5/3/2017: Updated with the latest bridge.
+To install locally, have the latest Docker Engine (Toolkit for Windows users...) installed. Then, from within bash:
 
-4/26/2017: Updated with the latest bridge (patches for R1.2 GA)
+    bash% ./run-reload-bridge.sh
 
-1/26/2017: Updated with the latest bridge. 
+Then, proceed via browser to https://localhost:8234 to set your credentials and key material for the bridge
 
-1/17/2017: Updated with the latest bridge. Happy New Year!
+    username: admin
+    pw: admin
 
-Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
+If you have the ICE utililites from IBM installed, you can load this into Bluemix Containers as follows:
 
-Install directly into Bluemix as a Container:
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ARMmbed/connector-bridge-container-iotf.git)
+    bash% ./bluemix_build.sh
+    bash% ./bluemix_run.sh
 
-Local installation Prerequisites (Ubuntu 14.04 LTS only):
-- IBM Bluemix Account created and setup
-- Understanding if your default Bluemix namespace ("dev" used in sample below)
-- Understanding of your default Bluemix container namespace ("dev" used in sample below)
-- ICE 3.0 Bluemix utilities installed
-- IBM Cloud Foundary utilities installed
-- Docker installed
+Each command above will show what options must be present to complete the build and run within Bluemix Containers.
 
-Local importation: Scripts to import container runtime containing the connector-bridge into Bluemix:
+Bridge source (Apache 2.0 licensed) is here: https://github.com/ARMmbed/connector-bridge.git
 
-    ubuntu% ./build_connector_bridge.sh
-
-    Usage: ./build_connector_bridge.sh <bm user> <bm password> <space> <container namespace> <container instance name>
-
-    ubuntu% ./build_connector_bridge.sh myBMUsername myBMPassword dev dev connector-bridge
-
-
-Copyright 2015. ARM Ltd. All rights reserved.
+Copyright 2017. ARM Ltd. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
