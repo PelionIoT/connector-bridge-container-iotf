@@ -1,5 +1,7 @@
 mbed Device Connector integration bridge image importer for IBM IoTF
 
+6/27/2017: Minor updates 
+
 6/20/2017: Cleanups, updates to properties editor and overall structure
 
 To install locally, have the latest Docker Engine (Toolkit for Windows users...) installed. Then, from within bash:
