@@ -1,4 +1,6 @@
-mbed Device Connector integration bridge image importer for IBM IoTF
+mbed Device Connector/mbed Cloud integration bridge for IBM Watson IoT
+
+03/22/2018: updated bridge - New Google integration functional now. Additional minor bridge updates.
 
 03/20/2018: updated bridge - significant updates for MQTT TLS support and new Google integration paradigm
 
